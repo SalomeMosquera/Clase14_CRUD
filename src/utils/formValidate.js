@@ -23,7 +23,7 @@ export const formValidate = (getValues) => {
     },
     validateEquals(value) {
       return {
-        equals: (v) => v === value || "Coinciden las constraseñas",
+        equals: (v) => v === value || "No coinciden las constraseñas",
       };
     },
   };
