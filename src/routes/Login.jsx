@@ -4,8 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
-  const [email, setEmail] = useState("salome.mosquera@uao.edu.co");
-  const [password, setPassword] = useState("123456789");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const { loginUser } = useContext(UserContext);
   const navega = useNavigate();
   /*const {
@@ -35,7 +36,7 @@ const Login = () => {
           <input
             type="email"
             name=""
-            id=""
+            // id=""
             placeholder="Email"
             /*{...login("email", {
               required: {
@@ -53,7 +54,7 @@ const Login = () => {
           <input
             type="password"
             name=""
-            id=""
+            // id=""
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
